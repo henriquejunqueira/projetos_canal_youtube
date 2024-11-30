@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Iceland</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Menu início -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Tourism Iceland</a>
+        <button
+          id="botaoMenu"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#destinations" class="nav-link">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Menu fim -->
+
+    <!-- Carrossel início -->
+    <div id="carrosselImagens" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carrosselImagens"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carrosselImagens"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carrosselImagens"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carrosselImagens"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carrosselImagens"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carrosselImagens"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/img/img01-carrossel.png"
+            class="d-block w-100"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/img02-carrossel.png"
+            class="d-block w-100"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/img03-carrossel.png"
+            class="d-block w-100"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/img04-carrossel.png"
+            class="d-block w-100"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/img05-carrossel.png"
+            class="d-block w-100"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/img06-carrossel.png"
+            class="d-block w-100"
+            alt=""
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carrosselImagens"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carrosselImagens"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carrossel fim -->
+
+    <!-- Content início -->
+    <div class="content" id="about">
+      <h4>About us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a lacus
+        sagittis, bibendum enim at, rhoncus tortor. Integer eu neque eget leo
+        sodales bibendum sit amet id lorem. Proin nec tellus id dolor pretium
+        consequat in sit amet tellus. Praesent elit dui, pellentesque non
+        vehicula ac, eleifend et eros. Duis vulputate ante et fringilla lacinia.
+        Suspendisse aliquet commodo sem. Integer faucibus sagittis tincidunt.
+        Suspendisse potenti. Ut ac tempor lorem. Cras rutrum, mi in lobortis
+        lacinia, sapien massa hendrerit est, eget fringilla justo nisi at
+        tortor.
+      </p>
+      <p>
+        Praesent laoreet dapibus lacus. Aenean volutpat ante sed sagittis
+        rutrum. Pellentesque lectus sem, porta vel augue sit amet, ultrices
+        commodo odio. Donec auctor ornare metus et rutrum. Cras hendrerit
+        lobortis nibh, vel volutpat dui finibus sit amet. Quisque aliquet, est
+        at gravida sodales, mauris sem malesuada metus, ut laoreet ipsum diam
+        sodales est. Nullam vehicula cursus nulla. Vivamus dignissim ligula at
+        congue rhoncus. Integer scelerisque nec felis ut tincidunt. Vivamus
+        dapibus ex rutrum, varius erat in, imperdiet ligula. Sed ipsum urna,
+        interdum et aliquam eget, bibendum vitae nisl. Quisque sed iaculis est,
+        nec semper erat. Nunc scelerisque dictum sollicitudin. Morbi id erat vel
+        sem volutpat posuere at eu velit. Maecenas vulputate sapien vitae
+        malesuada posuere.
+      </p>
+      <p>
+        Suspendisse nec accumsan ante, non lobortis turpis. Donec ultrices erat
+        aliquam felis tempus scelerisque. Praesent ut tortor nec sapien
+        venenatis feugiat vel id massa. Maecenas volutpat lacus eros, nec
+        viverra nisl sodales a. Curabitur mollis lorem magna, nec malesuada nunc
+        porta eget. Nullam laoreet laoreet rutrum. Ut leo elit, condimentum non
+        facilisis et, tincidunt et turpis. Nullam eget nisi a massa rhoncus
+        tempus nec a nulla.
+      </p>
+      <p>
+        In consectetur lacinia tincidunt. Mauris ipsum lectus, lacinia non
+        rhoncus ut, dignissim ac tortor. Suspendisse id faucibus nisi,
+        ullamcorper dignissim erat. Quisque et ligula elit. Sed rutrum feugiat
+        ligula, vel tempus dui feugiat et. Integer egestas tristique molestie.
+        Donec quis ipsum turpis. Aenean sed mauris elementum, interdum nulla ut,
+        consequat eros. Nullam in rutrum justo. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Vestibulum consectetur condimentum sodales.
+        In a elementum ligula. Duis posuere laoreet arcu vitae finibus.
+        Suspendisse potenti.
+      </p>
+    </div>
+    <!-- Content fim -->
+
+    <!-- Galeria início -->
+    <div class="gallery container my-4" id="destinations">
+      <div class="row g-3">
+        <h4>Destinations</h4>
+        <div class="col-6 col-md-3">
+          <img
+            src="./assets/img/img01-galeria.png"
+            class="img-fluid"
+            alt="Gallery 1"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="./assets/img/img02-galeria.png"
+            class="img-fluid"
+            alt="Gallery 2"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="./assets/img/img03-galeria.png"
+            class="img-fluid"
+            alt="Gallery 3"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="./assets/img/img04-galeria.png"
+            class="img-fluid"
+            alt="Gallery 4"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Galeria fim -->
+
+    <!-- Rodapé início -->
+    <footer>
+      <div class="footer-section" id="contacts">
+        <div>
+          <h5>Contacts</h5>
+          <p>
+            <i class="bi bi-telephone"></i>
+            <a href="tel:3549998888" target="_blank">+354 999 8888</a>
+          </p>
+          <p>
+            <i class="bi bi-whatsapp"></i>
+            <a
+              href="https://api.whatsapp.com/send?phone=3549998877&text=Hi, I saw your ad on YouTube and would like to know more about your service."
+              target="_blank"
+              >+354 999 8877</a
+            >
+          </p>
+        </div>
+        <div>
+          <h5>Social Media</h5>
+          <p>
+            <i class="bi bi-instagram"></i>
+            <a href="https://www.instagram.com/instagramFake" target="_blank"
+              >@meuInsta</a
+            >
+          </p>
+          <p>
+            <i class="bi bi-facebook"></i>
+            <a href="https://www.facebook.com/facebookFake" target="_blank"
+              >@meuFace</a
+            >
+          </p>
+          <p>
+            <i class="bi bi-linkedin"></i>
+            <a href="https://www.linkedin.com/in/linkedinFake" target="_blank"
+              >@meuLinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+      <p>All rights reserved © - 2024</p>
+    </footer>
+    <!-- Rodapé fim -->
+
+    <!-- Botão voltar ao topo início -->
+    <button id="backToTop" class="btn btn-primary">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- Botão voltar ao topo fim -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./assets/js/app.js"></script>
+</html>

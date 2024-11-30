@@ -1,0 +1,175 @@
+:root {
+  --blue: #a3dff7;
+  --green: #92c48e;
+  --gray: #4b4b4b;
+  --white: #f9f9f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Menu */
+nav {
+  background-color: var(--green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav a,
+.navbar-brand {
+  color: var(--white) !important;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  padding-bottom: 5px;
+  color: var(--white);
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--gray);
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Carrossel */
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  flex-shrink: 0;
+  height: 400px;
+  object-fit: cover;
+}
+
+#carrosselImagens {
+  box-shadow: 0x 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/* Conteúdo */
+.content {
+  background-color: var(--green);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content p {
+  text-align: justify;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  color: var(--gray);
+}
+
+.content h4,
+.gallery h4 {
+  text-align: center;
+  color: var(--gray);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Galeria */
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.img-fluid {
+  width: 263px;
+  height: 445px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--green);
+  color: var(--gray);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section div {
+  margin: 10px;
+}
+
+.footer-section i {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.footer-section a {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--white);
+  text-decoration-thickness: 3px;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--blue);
+  color: var(--gray);
+  border: none;
+  border-radius: 20%;
+  padding: 15px;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#backToTop:hover {
+  background-color: var(--blue);
+}
+
+#backToTop i {
+  font-size: 20px;
+}
